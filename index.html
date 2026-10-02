@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annapolis Boatyard Bash | A Benefit for Annapolis Schools</title>
+  <meta name="description" content="Join the Boatyard Bash on Friday, October 23, 2026 at Annapolis Marina to raise money for Annapolis schools with live music, drinks, and a silent auction.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛵</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand">
+      <span class="brand-icon">⛵</span>
+      <span class="brand-text">Boatyard Bash</span>
+      <span class="brand-badge">Oct 23</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><button class="btn-nav-rsvp" onclick="openRSVPModal()">RSVP — It's Free</button></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-pill-badge">A Benefit for Annapolis Schools</span>
+      <h1 class="hero-title">Annapolis Boatyard Bash</h1>
+      <p class="hero-subtitle">
+        An evening on the water with live music, drinks, and a silent auction — all to support our local schools.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary-rsvp" onclick="openRSVPModal()">RSVP — it's free</button>
+        <div class="hero-meta-pill">
+          <span>📅</span>
+          <span>Friday, October 23, 2026 • 6–9 PM</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK INFO CARDS -->
+  <div class="info-cards-grid">
+    <div class="info-card">
+      <div class="info-icon">📍</div>
+      <h3 class="info-title">Where & When</h3>
+      <p class="info-desc">Annapolis Marina Boardwalk<br>Friday, Oct 23, 2026 from 6:00 to 9:00 PM</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">👥</div>
+      <h3 class="info-title">Who It's For</h3>
+      <p class="info-desc">Annapolis residents, families, friends, and community education champions.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🎟️</div>
+      <h3 class="info-title">Admission</h3>
+      <p class="info-desc">Free admission with RSVP. Drinks, light bites, and auction bidding on-site.</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">🏫</div>
+      <h3 class="info-title">Beneficiary</h3>
+      <p class="info-desc">100% of silent auction proceeds fund STEM, arts, and athletics in Annapolis public schools.</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-tag">Our Mission</span>
+      <h2 class="section-title">An Evening on the Water for a Great Cause</h2>
+      <p class="section-subtitle">
+        Gather with neighbors and friends at the historic Annapolis Marina. Enjoy cool autumn bay breezes, soulful acoustic melodies, and a vibrant community spirit while empowering local teachers and students.
+      </p>
+    </div>
+
+    <!-- HIGHLIGHTS GRID -->
+    <div class="highlights-grid" id="highlights">
+      <div class="highlight-card">
+        <div class="highlight-icon-box">🎸</div>
+        <h3 class="highlight-title">Live Waterfront Music</h3>
+        <p class="highlight-text">
+          Local Chesapeake bay musicians perform acoustic sets right on the pier as the sun sets over docked sailboats.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon-box">🏆</div>
+        <h3 class="highlight-title">Silent Charity Auction</h3>
+        <p class="highlight-text">
+          Bid on sailing excursions, weekend getaways, local restaurant baskets, and artwork donated by community artisans.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon-box">🥂</div>
+        <h3 class="highlight-title">Local Bites & Craft Drinks</h3>
+        <p class="highlight-text">
+          Savor Maryland crab dip, local oysters, seasonal craft beers, and cider provided by our generous local culinary partners.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon-box">🎓</div>
+        <h3 class="highlight-title">Annapolis Schools Fund</h3>
+        <p class="highlight-text">
+          Every bid and donation directly finances classroom supplies, science kits, robotics clubs, and music instruments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE SECTION -->
+  <section class="section" id="schedule" style="background: rgba(16, 29, 66, 0.2); border-radius: 32px; border: 1px solid rgba(255, 255, 255, 0.05); margin-bottom: 60px;">
+    <div class="section-header">
+      <span class="section-tag">Evening Program</span>
+      <h2 class="section-title">Schedule of Events</h2>
+      <p class="section-subtitle">What to look forward to during the evening at the marina.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-item">
+        <div class="timeline-time">6:00 PM</div>
+        <div class="timeline-details">
+          <h4>Marina Doors Open & Sunset Welcome</h4>
+          <p>Check in, grab a welcome drink, browse auction items, and mingle by the boats.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">6:45 PM</div>
+        <div class="timeline-details">
+          <h4>Live Waterfront Acoustic Session</h4>
+          <p>Enjoy live tunes from Annapolis favorite musicians on the main boardwalk stage.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">8:00 PM</div>
+        <div class="timeline-details">
+          <h4>Silent Auction Closes</h4>
+          <p>Final bids locked in on all vacation packages, sports gear, and local gift baskets.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">8:30 PM</div>
+        <div class="timeline-details">
+          <h4>Auction Winners & Grant Announcements</h4>
+          <p>Celebrating our total funds raised for Annapolis classrooms and thanking our sponsors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section" id="faq">
+    <div class="section-header">
+      <span class="section-tag">Got Questions?</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">
+          <span>Is the Boatyard Bash free to attend?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Yes! Admission is 100% free with an RSVP. Food and drinks are provided, and donations/auction bids are voluntary to support our schools.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">
+          <span>Where do I park at the Annapolis Marina?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Designated attendee parking is available at the Annapolis Marina lot and adjacent public garages on Compromise Street with shuttle service.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">
+          <span>What is the dress code?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Smart casual / maritime casual. We recommend comfortable flat shoes for walking on the wooden docks, and a light jacket for the waterfront breeze.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="faq-question">
+          <span>Can I bring my family and children?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          Yes! The event is family-friendly and open to all ages who wish to celebrate Annapolis education.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP MODAL -->
+  <div class="modal-overlay" id="rsvp-modal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Reserve Your Free Spot</h3>
+        <button class="btn-close-modal" onclick="closeRSVPModal()">&times;</button>
+      </div>
+      <form id="rsvp-form" onsubmit="handleRSVPSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="rsvp-name">Full Name</label>
+          <input type="text" id="rsvp-name" class="form-input" placeholder="e.g. Brooke Henderson" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvp-email">Email Address</label>
+          <input type="email" id="rsvp-email" class="form-input" placeholder="you@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="rsvp-guests">Party Size</label>
+          <select id="rsvp-guests" class="form-input" style="cursor: pointer;">
+            <option value="1">1 Person (Just me)</option>
+            <option value="2" selected>2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5+">5+ People</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit-rsvp">Confirm Free RSVP ⚓</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-msg" id="toast-msg">
+    <span>✅</span>
+    <span id="toast-text">RSVP confirmed! Check your email for event check-in details.</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">⛵ Annapolis Boatyard Bash</div>
+      <p class="footer-desc">
+        A community benefit event dedicated to funding educational excellence across Annapolis public schools.
+      </p>
+      
+      <!-- GITHUB REPOSITORY LINK -->
+      <div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="github-badge">
+          <span>📦</span>
+          <span>View Source on GitHub: <strong>boatyard-bash</strong></span>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Annapolis Boatyard Bash Committee. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
